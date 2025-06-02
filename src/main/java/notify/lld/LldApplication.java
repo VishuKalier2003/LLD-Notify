@@ -1,3 +1,4 @@
+// Advised to configure springboot starter
 package notify.lld;
 
 import org.springframework.boot.SpringApplication;

@@ -1,5 +1,8 @@
 package notify.lld.domain.model;
 
+import java.util.List;
+
+import io.micrometer.common.lang.NonNull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -16,8 +19,15 @@ import notify.lld.domain.enums.PriorityType;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Message {
-    private String name, message;
-
+public class RawMessage {
+    @NonNull
+    private String sender;
+    @NonNull
+    private List<String> recievers;
+    @NonNull
+    private String message;
+    @NonNull
     private PriorityType type;
+    @NonNull
+    private String time;
 }

@@ -1,10 +1,13 @@
 package notify.lld.service;
 
-import notify.lld.domain.model.Message;
-import notify.lld.service.interfaces.NotifyStrategy;
+import notify.lld.domain.model.RawMessage;
 
 public class Email implements NotifyStrategy {
-    
+
+    public Email() {
+    }
+
     @Override
-    public void send(Message message) {}
+    public void send(RawMessage message) {
+    }
 }

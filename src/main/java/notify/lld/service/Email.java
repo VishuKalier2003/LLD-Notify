@@ -1,13 +1,16 @@
 package notify.lld.service;
 
-import notify.lld.domain.model.RawMessage;
+import org.springframework.stereotype.Component;
 
+import notify.lld.domain.model.QualifiedMessage;
+
+@Component("EMAIL")
 public class Email implements NotifyStrategy {
 
     public Email() {
     }
 
     @Override
-    public void send(RawMessage message) {
+    public void send(QualifiedMessage message) {
     }
 }
